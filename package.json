@@ -1,12 +1,17 @@
 {
   "name": "chrome_password",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "bin": "cli.js",
   "types": "index.d.ts",
   "napi": {
     "name": "rusty_chrome_password",
-    "triples": {}
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "x86_64-pc-windows-msvc"
+      ]
+    }
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,5 +27,8 @@
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "optionalDependencies": {
+    "chrome_password-win32-x64-msvc": "0.2.0"
+  }
 }
