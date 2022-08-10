@@ -14,11 +14,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chrome_password-win32-x64-msvc@npm:0.2.0":
+  version: 0.2.0
+  resolution: "chrome_password-win32-x64-msvc@npm:0.2.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "chrome_password@workspace:.":
   version: 0.0.0-use.local
   resolution: "chrome_password@workspace:."
   dependencies:
     "@napi-rs/cli": ^2.11.1
+    chrome_password-win32-x64-msvc: 0.2.0
+  dependenciesMeta:
+    chrome_password-win32-x64-msvc:
+      optional: true
   bin:
     chrome_password: cli.js
   languageName: unknown

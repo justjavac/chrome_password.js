@@ -1,6 +1,6 @@
 {
   "name": "chrome_password",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "bin": "cli.js",
   "types": "index.d.ts",
@@ -29,6 +29,6 @@
   },
   "packageManager": "yarn@3.2.2",
   "optionalDependencies": {
-    "chrome_password-win32-x64-msvc": "0.2.0"
+    "chrome_password-win32-x64-msvc": "0.3.0"
   }
 }
