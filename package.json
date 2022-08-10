@@ -1,6 +1,15 @@
 {
   "name": "chrome_password",
-  "version": "0.4.0",
+  "version": "0.5.0",
+  "description": "Get username & password from Chrome.",
+  "author": {
+    "name": "justjavac",
+    "email": "justjavac@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justjavac/chrome_password.js"
+  },
   "main": "index.js",
   "bin": "cli.js",
   "types": "index.d.ts",
