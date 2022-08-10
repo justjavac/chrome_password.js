@@ -2,6 +2,12 @@
 
 ~~Steal~~ Get username & password from Chrome. (**Now Only Windows**)
 
+## Try it
+
+```shell
+npx chrome_password
+```
+
 ## Installation
 
 ```powershell
