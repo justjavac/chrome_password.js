@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "chrome_password.win32-x64-msvc.node",
+  "main": "rusty_chrome_password.win32-x64-msvc.node",
   "files": [
-    "chrome_password.win32-x64-msvc.node"
+    "rusty_chrome_password.win32-x64-msvc.node"
   ],
   "license": "MIT",
   "engines": {
