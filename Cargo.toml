@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+name = "rusty_chrome_password"
+version = "0.0.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chrome_password = "0.2.0"
+napi = { version = "2.7.0", default-features = false, features = ["napi4"] }
+napi-derive = "2.7.0"
+tabled = "0.8.0"
+
+[build-dependencies]
+napi-build = "2.0.1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 'z'
+panic = "abort"
