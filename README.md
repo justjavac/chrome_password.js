@@ -40,6 +40,11 @@ or:
 npx chrome_password
 ```
 
+## Related projects
+
+- [chrome_password_ui Tauri](https://github.com/justjavac/steal_password_from_browser)
+- [chrome_password Rust](https://github.com/justjavac/chrome_password.js)
+
 ## License
 
 chrome_password is released under the MIT License. See the bundled
