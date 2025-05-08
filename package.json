@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@napi-rs/cli": "^2.11.1"
+    "@napi-rs/cli": "^2.18.4"
   },
   "engines": {
     "node": ">= 10"
@@ -36,8 +36,8 @@
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version"
   },
-  "packageManager": "yarn@3.2.2",
   "optionalDependencies": {
     "chrome_password-win32-x64-msvc": "0.4.0"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }

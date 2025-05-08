@@ -3,8 +3,8 @@ extern crate napi_derive;
 use std::env;
 use std::path::PathBuf;
 use tabled::builder::Builder;
-use tabled::object::Columns;
-use tabled::{Modify, Width};
+use tabled::settings::object::Columns;
+use tabled::settings::{Style, Width};
 
 #[napi]
 pub fn get_password() -> Vec<Vec<String>> {
@@ -20,12 +20,13 @@ pub fn get_password() -> Vec<Vec<String>> {
 pub fn get_password_table() -> String {
   let password = get_password();
   let mut builder = Builder::default();
-  builder.set_columns(["url", "username", "password"]);
+  builder.push_record(["url", "username", "password"]);
   for p in password {
-    builder.add_record(p);
+    builder.push_record(p);
   }
   builder
     .build()
-    .with(Modify::new(Columns::first()).with(Width::wrap(50).keep_words()))
+    .with(Style::ascii())
+    .modify(Columns::first(), Width::wrap(50).keep_words(true))
     .to_string()
 }

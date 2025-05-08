@@ -2,15 +2,15 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 6
-  cacheKey: 8
+  version: 8
+  cacheKey: 10c0
 
-"@napi-rs/cli@npm:^2.11.1":
-  version: 2.11.1
-  resolution: "@napi-rs/cli@npm:2.11.1"
+"@napi-rs/cli@npm:^2.18.4":
+  version: 2.18.4
+  resolution: "@napi-rs/cli@npm:2.18.4"
   bin:
     napi: scripts/index.js
-  checksum: 249493cebeb20c3daa58282eb068d1af3266f911df2149cfb0c88d83838ca24f6b82aa7b8eafcf6e5171c5204b92cc7e458b8672f65ae5aa9213bfe1f3154ff6
+  checksum: 10c0/cb80bc86687ba01077a0faa8d38198bc632b7caacf3a42ec42c3ec04700084ca26be9eec13bf7ac7da90e6afb46c65a39de8a86825a53b74dec2f2f459c0a7ea
   languageName: node
   linkType: hard
 
@@ -25,8 +25,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chrome_password@workspace:."
   dependencies:
-    "@napi-rs/cli": ^2.11.1
-    chrome_password-win32-x64-msvc: 0.4.0
+    "@napi-rs/cli": "npm:^2.18.4"
+    chrome_password-win32-x64-msvc: "npm:0.4.0"
   dependenciesMeta:
     chrome_password-win32-x64-msvc:
       optional: true
